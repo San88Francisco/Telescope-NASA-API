@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8" />
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+   <link rel="stylesheet" href="./style.scss">
+   <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <title>Telescope NASA</title>
+</head>
+
+<body>
+   <nav class="navbar bg-body-tertiary">
+      <div class="container-fluid">
+         <div class="logo">
+            <i class="fa-solid fa-earth-asia"></i>
+            <a class="navbar-brand">Telescope NASA</a>
+         </div>
+         <button id="user-btn" type="button" class="btn btn-outline-secondary">
+            <i class="fa-regular fa-user" style="color: #0d1117;"></i>
+            <span id="user-value">User</span>
+         </button>
+      </div>
+   </nav>
+
+   <section id="sun">
+      <div class="up-sun">
+         <img src="./planets/sunUp.png" alt="">
+      </div>
+
+      <div class="down-sun">
+         <img src="./planets/sunDown.png" alt="">
+      </div>
+
+      <div id="galaxy">
+      </div>
+   </section>
+
+   <section id="info-menu">
+   </section>
+
+   <section id="user-contant">
+      <div class="container-log-in">
+         <div class="sign-in-btn">
+            Війти
+         </div>
+         <div class="registration-btn">
+            Зареєструватись
+         </div>
+      </div>
+      <form id="log-in-form">
+         <h1>Вхід:</h1>
+         <label for="email">Електронна пошта:</label>
+         <input type="email" id="emailLog" name="email" placeholder="email" required>
+
+         <label for="password">Пароль:</label>
+         <input type="password" id="passwordLog" name="password" placeholder="password" required>
+
+         <button type="submit">Війти</button>
+      </form>
+      <form id="register-form">
+         <h1>Реєстрація:</h1>
+         <label for="name">Ім'я:</label>
+         <input type="text" id="name" name="name" placeholder="name" required>
+
+         <label for="surname">Прізвище:</label>
+         <input type="text" id="surname" name="surname" placeholder="surname" required>
+
+         <label for="email">Електронна пошта:</label>
+         <input type="email" id="email" name="email" placeholder="email" required>
+
+         <label for="password">Пароль:</label>
+         <input type="password" id="password" name="password" placeholder="password" required>
+
+         <label for="confirmPassword">Підтвердження паролю:</label>
+         <input type="password" id="confirmPassword" name="confirmPassword" placeholder="confirmPassword" required>
+
+         <button id="register-submit-btn" type="submit">Зареєструватися</button>
+      </form>
+      <i id="exit-user" class="fa-solid fa-arrow-right-from-bracket"> Exit</i>
+   </section>
+
+
+   <script type="module" src="./Js/main.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"></script>
+</body>
+
+</html>
